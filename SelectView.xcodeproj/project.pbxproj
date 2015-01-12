@@ -14,6 +14,8 @@
 		684663EB1A63C0BB001DFFE1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 684663EA1A63C0BB001DFFE1 /* Images.xcassets */; };
 		684663EE1A63C0BB001DFFE1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 684663EC1A63C0BB001DFFE1 /* LaunchScreen.xib */; };
 		684663FA1A63C0BB001DFFE1 /* SelectViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 684663F91A63C0BB001DFFE1 /* SelectViewTests.m */; };
+		684664051A63C20C001DFFE1 /* SelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 684664041A63C20C001DFFE1 /* SelectView.m */; };
+		684664061A63C20C001DFFE1 /* SelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 684664041A63C20C001DFFE1 /* SelectView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		684663F31A63C0BB001DFFE1 /* SelectViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelectViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		684663F81A63C0BB001DFFE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		684663F91A63C0BB001DFFE1 /* SelectViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectViewTests.m; sourceTree = "<group>"; };
+		684664031A63C20C001DFFE1 /* SelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectView.h; sourceTree = "<group>"; };
+		684664041A63C20C001DFFE1 /* SelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 		684663DC1A63C0BB001DFFE1 /* SelectView */ = {
 			isa = PBXGroup;
 			children = (
+				684664031A63C20C001DFFE1 /* SelectView.h */,
+				684664041A63C20C001DFFE1 /* SelectView.m */,
 				684663E11A63C0BB001DFFE1 /* AppDelegate.h */,
 				684663E21A63C0BB001DFFE1 /* AppDelegate.m */,
 				684663E41A63C0BB001DFFE1 /* ViewController.h */,
@@ -221,6 +227,7 @@
 			files = (
 				684663E61A63C0BB001DFFE1 /* ViewController.m in Sources */,
 				684663E31A63C0BB001DFFE1 /* AppDelegate.m in Sources */,
+				684664051A63C20C001DFFE1 /* SelectView.m in Sources */,
 				684663E01A63C0BB001DFFE1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				684664061A63C20C001DFFE1 /* SelectView.m in Sources */,
 				684663FA1A63C0BB001DFFE1 /* SelectViewTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

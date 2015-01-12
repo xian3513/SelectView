@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "SelectView.h"
 @interface ViewController ()
 
 @end
@@ -16,6 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    SelectView *view = [[SelectView alloc]initWithFrame:CGRectMake(20, 40, 300, 300)];
+    [self.view addSubview:view];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
