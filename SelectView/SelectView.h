@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface SelectView : UIView
-- (void)select;
+@property (nonatomic )BOOL isSelect;
 @end

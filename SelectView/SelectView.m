@@ -10,20 +10,19 @@
 
 @implementation SelectView
 {
-    BOOL isSelect;
+  
 }
-
-- (void)select {
-    isSelect = YES;
+-(void)setIsSelect:(BOOL)isSelect
+{
+    _isSelect = isSelect;
     [self setNeedsDisplay];
 }
-
 -(id)initWithFrame:(CGRect)frame
 {
     if(self = [super initWithFrame:frame])
     {
         self.backgroundColor = [UIColor whiteColor];
-        isSelect = NO;
+        _isSelect = NO;
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(selectTap:)];
         tap.numberOfTapsRequired = 1;
         [self addGestureRecognizer:tap];
@@ -32,7 +31,7 @@
 }
 -(void)selectTap:(UITapGestureRecognizer *)tap
 {
-    isSelect = isSelect?NO:YES;
+    _isSelect = _isSelect?NO:YES;
     [self setNeedsDisplay];
     
 }
@@ -44,7 +43,7 @@
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSetLineWidth(context, lineWidth);//线的宽度
     CGContextAddArc(context, center.x, center.y, r, 0, 2*M_PI, 0); //添加一个圆
-          if(isSelect)
+          if(_isSelect)
         {
             UIColor*aColor = [UIColor colorWithRed:23.0/255.0 green:126.0/255.0 blue:251.0/255.0 alpha:1];
             CGContextSetStrokeColorWithColor(context, aColor.CGColor);
